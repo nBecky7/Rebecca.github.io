@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rebecca Operations Portfolio</title>
-<meta name="description" content="Rebecca, virtual assistant in Nairobi. Operations, workflow automation, inbox and calendar management.">
+<title>Rebecca Murithi · Executive Virtual Assistant Portfolio</title>
+<meta name="description" content="Rebecca Murithi, executive virtual assistant in Nairobi. Operations, workflow automation, inbox and calendar management.">
 <meta name="theme-color" content="#16233a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +98,28 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .value{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
 .value .label{font-size:11px}
 .value b{display:block;font-weight:600;margin-top:6px}
+
+/* ---------- experience ---------- */
+.experience{border-top:1px solid var(--line)}
+.xp-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.9fr);gap:24px;align-items:start}
+.log{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 26px}
+.entry{display:grid;grid-template-columns:128px 1fr;gap:20px;padding:22px 0;border-bottom:1px dashed var(--line)}
+.entry:last-child{border:0}
+.when{font-family:var(--f-mono);font-size:12px;color:var(--muted);line-height:1.5}
+.when b{display:block;color:var(--text);font-weight:500;font-size:13px}
+.entry h3{font-size:18px;font-weight:600}
+.entry .org{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-top:2px}
+.entry ul{margin:10px 0 0;padding-left:18px;color:#2d3b54;font-size:15px}
+.entry li+li{margin-top:4px}
+.side{display:grid;gap:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:12px;align-content:start}
+.panel h3{font-family:var(--f-mono);font-weight:500;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.edu{display:grid;gap:2px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.edu:last-child{border:0;padding:0}
+.edu b{font-size:15px;font-weight:600;line-height:1.35}
+.edu small{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips .chip{font-size:12px;padding:4px 9px}
 
 /* ---------- services board ---------- */
 .services{background:var(--paper-2)}
@@ -228,7 +250,7 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
   .hero .in,.about .in,.contact .in{grid-template-columns:1fr;gap:40px}
   .bar nav{display:none}
   .photo{max-width:340px}
-  .why-grid{grid-template-columns:1fr}
+  .why-grid,.xp-grid{grid-template-columns:1fr}
   .why,.why:nth-child(4),.why:nth-child(5){grid-column:auto}
   section{padding-block:64px}
 }
@@ -239,6 +261,8 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
   .case-copy{padding:24px 20px}
   .case-vis{padding:18px}
   .trio div{grid-template-columns:1fr;gap:2px}
+  .entry{grid-template-columns:1fr;gap:8px}
+  .log{padding:4px 20px}
   .line{grid-template-columns:1fr auto}
   .line span{grid-column:1/-1}
   .bar .status{display:none}
@@ -251,7 +275,7 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
   <div class="in">
     <a class="brand" href="#top">rebecca<span>.ops</span></a>
     <nav aria-label="Main">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#systems">Systems</a><a href="#tools">Tools</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#systems">Systems</a><a href="#tools">Tools</a><a href="#contact">Contact</a>
     </nav>
     <span class="status"><i class="dot"></i>Available for new clients</span>
   </div>
@@ -263,7 +287,7 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
 <section class="hero" aria-labelledby="hero-h">
   <div class="in">
     <div>
-      <span class="label">Virtual assistant · Operations &amp; automation · Nairobi</span>
+      <span class="label">Executive virtual assistant · Operations &amp; automation · Nairobi</span>
       <h1 id="hero-h">Hello, I'm Rebecca. I build <em>workflows that run themselves.</em></h1>
       <p class="lead">I step in where operations feel overwhelming, bringing structure, clarity and optimised workflows that keep your business running. With proactive <b>virtual assistance</b>, I handle the backend so you can focus on growth.</p>
       <div class="ctas">
@@ -296,9 +320,11 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
     <div>
       <div class="photo"><img src="images/rebecca.jpg" alt="Rebecca smiling, wearing a black blazer and white collared shirt" width="668" height="835" loading="lazy"></div>
       <div class="idcard">
-        <div><span>Role</span>Virtual Assistant</div>
+        <div><span>Name</span>Rebecca Murithi</div>
+        <div><span>Role</span>Executive Virtual Assistant</div>
         <div><span>Focus</span>Operations &amp; automation</div>
-        <div><span>Based in</span>Nairobi, Kenya</div>
+        <div><span>Background</span>Manufacturing engineer</div>
+        <div><span>Based in</span>Kiambu, Nairobi, Kenya</div>
         <div><span>Works</span>Remote, across time zones</div>
       </div>
     </div>
@@ -306,11 +332,89 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
       <span class="label">About me</span>
       <h2 id="about-h">A lifelong organiser who loves building systems.</h2>
       <p>My journey to becoming a virtual assistant is driven by a lifelong passion for organisation and a desire to help others reach their goals. I've always been drawn to roles that involve building systems, solving problems and paying close attention to detail, and I'm excited to put those skills to work for your success.</p>
+      <p>My background is in engineering. I studied Manufacturing Engineering at Egerton University, then worked as a sales engineer and as a technical writer for a manufacturing firm. That work taught me to manage client relationships, keep accurate documentation and turn complex information into clear, simple steps. Today I combine it with online and AI tools to streamline workflows, so you can focus on your core priorities.</p>
       <p>I believe in personalised, reliable, detail-oriented support. I take the time to understand your needs and work with you to reach your objectives. I pride myself on a strong work ethic, the ability to learn quickly and a commitment to exceeding expectations.</p>
       <div class="values" aria-label="My values">
         <div class="value"><span class="label">Value</span><b>Clear communication</b></div>
         <div class="value"><span class="label">Value</span><b>Honesty</b></div>
         <div class="value"><span class="label">Value</span><b>A proactive approach</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience" aria-labelledby="xp-h">
+  <div class="in">
+    <div class="sec-head">
+      <span class="label">Experience &amp; education</span>
+      <h2 id="xp-h">Where my skills come from</h2>
+      <p>Hands-on virtual assistance training, backed by real client-facing and writing roles and an engineering degree.</p>
+    </div>
+    <div class="xp-grid">
+      <div class="log">
+        <article class="entry">
+          <div class="when"><b>Projects</b>Applied training</div>
+          <div>
+            <h3>Executive Virtual Support</h3>
+            <div class="org">Practical experience &amp; projects</div>
+            <ul>
+              <li>Built workflow systems in ClickUp, Notion and Trello.</li>
+              <li>Ran email and calendar management, including Inbox Zero systems and scheduling coordination.</li>
+              <li>Wrote SOPs and set up task management systems and structured workflows for business operations.</li>
+              <li>Handled simulated client scenarios covering project coordination, follow-ups and administrative support.</li>
+              <li>Automated repetitive tasks with Zapier and Calendly.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="when"><b>2024 – Jun 2025</b></div>
+          <div>
+            <h3>Technical Writer</h3>
+            <div class="org">First Mold Manufacturing · Mexico</div>
+            <ul>
+              <li>Wrote SEO-optimised technical content on manufacturing and engineering topics.</li>
+              <li>Researched each topic thoroughly to produce accurate, high-quality articles.</li>
+              <li>Managed my own content workflow, deadlines and revisions independently.</li>
+              <li>Turned complex technical concepts into clear, user-friendly writing.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="entry">
+          <div class="when"><b>2023</b></div>
+          <div>
+            <h3>Sales Engineer</h3>
+            <div class="org">Pump company</div>
+            <ul>
+              <li>Managed client relationships and provided technical solutions tailored to each customer.</li>
+              <li>Coordinated sales processes with timely follow-ups and accurate documentation.</li>
+              <li>Gave product presentations and handled client inquiries to improve engagement.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="side">
+        <div class="panel">
+          <h3>Education &amp; training</h3>
+          <div class="edu"><b>Digital Marketing</b><small>HubSpot Academy · 2025</small></div>
+          <div class="edu"><b>ALX Africa</b><small>Professional training · 2022 – 2023</small></div>
+          <div class="edu"><b>Bachelor of Manufacturing Engineering</b><small>Egerton University · 2014 – 2019</small></div>
+        </div>
+        <div class="panel">
+          <h3>Core skills</h3>
+          <div class="chips">
+            <span class="chip">Scheduling &amp; calendar management</span>
+            <span class="chip">Time management &amp; prioritisation</span>
+            <span class="chip">Operations &amp; workflow management</span>
+            <span class="chip">Workflow automation</span>
+            <span class="chip">SOP writing</span>
+            <span class="chip">Digital &amp; content support</span>
+            <span class="chip">Client relationship management</span>
+            <span class="chip">Attention to detail</span>
+            <span class="chip">English proficiency</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -336,7 +440,7 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
         <div class="task"><b>Workflow structuring &amp; process optimisation</b><span class="pri" style="--c:#2fbf83">Most requested</span><div class="tools"><span class="chip">Zapier</span><span class="chip">Make</span></div></div>
         <div class="task"><b>Project coordination</b><div class="tools"><span class="chip">Asana</span><span class="chip">ClickUp</span><span class="chip">Notion</span></div></div>
         <div class="task"><b>Research &amp; competitor analysis</b><div class="tools"><span class="chip">Google Docs</span><span class="chip">Claude</span></div></div>
-        <div class="task"><b>Documents &amp; presentations</b><div class="tools"><span class="chip">Google Docs</span><span class="chip">PowerPoint</span></div></div>
+        <div class="task"><b>SOPs, documents &amp; presentations</b><div class="tools"><span class="chip">Google Docs</span><span class="chip">Notion</span><span class="chip">PowerPoint</span></div></div>
       </div>
       <div class="col">
         <div class="col-h">Customer &amp; client support <span class="mono">3</span></div>
@@ -345,8 +449,9 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
         <div class="task"><b>Feedback &amp; review management</b><div class="tools"><span class="chip">HubSpot</span></div></div>
       </div>
       <div class="col">
-        <div class="col-h">Social &amp; digital presence <span class="mono">2</span></div>
+        <div class="col-h">Social &amp; digital presence <span class="mono">3</span></div>
         <div class="task"><b>Content creation</b><div class="tools"><span class="chip">Canva</span><span class="chip">Adobe Express</span></div></div>
+        <div class="task"><b>SEO blog &amp; technical writing</b><span class="pri" style="--c:#a78bfa">Industry experience</span><div class="tools"><span class="chip">Google Docs</span><span class="chip">Grammarly</span></div></div>
         <div class="task"><b>Content scheduling &amp; platform management</b><div class="tools"><span class="chip">Meta</span><span class="chip">LinkedIn</span><span class="chip">TikTok</span><span class="chip">Buffer</span></div></div>
       </div>
     </div>
@@ -567,9 +672,9 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
       <span class="label">New request · open</span>
       <div class="line"><span>Email</span><b id="c-email">rebecamurithi@gmail.com</b><button class="copy" type="button" data-copy="c-email">Copy</button></div>
       <div class="line"><span>Phone</span><b id="c-phone">+254 710 381 781</b><button class="copy" type="button" data-copy="c-phone">Copy</button></div>
-      <div class="line"><span>Location</span><b>Nairobi, Kenya</b><span></span></div>
+      <div class="line"><span>Location</span><b>Kiambu, Nairobi, Kenya</b><span></span></div>
       <!-- Replace href="#contact" with Rebecca's LinkedIn profile URL and the link text with her name -->
-      <div class="line"><span>LinkedIn</span><b><a href="#contact">Add profile link</a></b><span></span></div>
+      <div class="line"><span>LinkedIn</span><b><a href="#contact">Rebecca Murithi</a></b><span></span></div>
       <a class="btn primary" href="mailto:rebecamurithi@gmail.com" style="justify-content:center;margin-top:6px" id="hire">Hire me</a>
     </div>
   </div>
@@ -578,7 +683,7 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;pa
 </main>
 
 <footer>
-  <div class="in"><span>rebecca.ops · Virtual assistant, Nairobi</span><span>Built with structure and care</span></div>
+  <div class="in"><span>© Rebecca Murithi · Executive virtual assistant, Nairobi</span><span>Built with structure and care</span></div>
 </footer>
 
 <script>
